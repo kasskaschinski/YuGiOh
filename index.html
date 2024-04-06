@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/O olho.png">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/Logo.png" alt="Logo Yu-Gi-Oh">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione o personagem </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="yami-yugi" data-name="Yami Yugi"
+                data-description="Quando Yugi Muto solucionou o Enigma do Milênio, ele foi possuído pelo antigo espírito de Yami Yugi. Estando sempre pronto para encarar qualquer desafio, determinado a recuperar suas memórias perdidas. Um Duelista hábil, dominando habilidades e cartas sem igual. O Yami Yugi conta com seu leal e inigualável monstro o “Mago Negro”.">
+                    <img src="./src/imagens/Yami Yugi.png" alt="Yami Yugi">
+                </li>
+                <li class="personagem" id="seto-kaiba" data-name="Seto Kaiba"
+                data-description="O eterno rival de Yugi e presidente da KaibaCorp (o conglomerado de jogos líder mundial). Kaiba é extremamente orgulhoso e confiante, e não medirá esforços para se tornar o maior Duelista da história. Seu monstro emblemático é o lendário e feroz “Dragão Branco de Olhos Azuis”, uma carta rara de poder inigualável.">
+                    <img src="./src/imagens/Seto Kaiba.png" alt="Seto Kaiba">
+                </li>
+                <li class="personagem" id="joey-wheeler" data-name="Joey Wheeler"
+                data-description="O Duelista Joey Wheeler não teme enfrentar perigos para ajudar seus amigos, especialmente seu melhor amigo Yugi. Sempre pronto para arriscar, suas cartas frequentemente dependem da sorte. No entanto, seu monstro de confiança é o “Dragão Negro de Olhos Vermelhos”.">
+                    <img src="./src/imagens/Joey Wheeler.png" alt="Joey Wheeler">
+                </li>
+                <li class="personagem" id="mai-valentine" data-name="Mai Valentine"
+                data-description="A bela e destemida Mai Valentine viajou pelo mundo, derrotando todos os desafiantes em seu caminho. Embora possa parecer mandona e durona, ela também tem um lado mais suave, como uma irmã mais velha em quem se pode confiar. (Mas não a chame de “velha”!). Durante os Duelos, sua “Lady Harpia” encanta seus oponentes até a derrota.">
+                    <img src="./src/imagens/Mai Valentine.png" alt="Mai Valentine">
+                </li>
+                <li class="personagem" id="yugi-muto" data-name="Yugi Muto"
+                data-description="Yugi Muto era um estudante do ensino médio tranquilo, amante de jogos, levando uma vida comum... até que ele resolveu o Enigma do Milênio. Agora, o destino abriu o caminho para uma jornada inimaginável! Sua carta emblemática é o poderoso “Gandora, o Dragão da Destruição”, que tem o poder de aniquilar todos.">
+                    <img src="./src/imagens/Yugi Muto.png" alt="Yugi Muto">
+                </li>
+                <li class="personagem" id="maximillion-pegasus" data-name="Maximillion Pegasus"
+                data-description="Maximillion Pegasus é o presidente da Industrial Illusions e o genial designer de jogos que criou Duel Monsters. Ele usa o poder de seu Olho do Milênio para ler a mente de seus oponentes e ver as cartas em suas mãos. Seu Deck se concentra em Monstros Toon para brincar com seus oponentes. Mas quando ele fica sério, sua carta “Relinquished - O Renunciado” tem um efeito que permite absorver os monstros de seus oponentes.">
+                    <img src="./src/imagens/Maximillion Pegasus.png" alt="Maximillion Pegasus">
+                </li>
+                <li class="personagem" id="yami-bakura" data-name="Yami Bakura"
+                data-description="Quando o colega de classe de Yugi, Bakura, foi possuído pelo espírito maligno dentro do Anel do Milênio, ele se transformou em Yami Bakura. Ele é implacável e não hesitará em nada para alcançar seu objetivo. O Deck Ocultista de Yami Bakura se concentra em cartas do tipo Fiend e Zombie.">
+                    <img src="./src/imagens/Yami Bakura.png" alt="Yami Bakura">
+                </li>
+                <li class="personagem" id="yami-marik" data-name="Yami Marik"
+                data-description="Yami Marik é o lado sombrio de Marik Ishtar, criado a partir do sofrimento que ele suportou como Guardião de Túmulos. Cruel e selvagem, ele se delicia ao ver seus oponentes sofrerem. Seu apetite pela destruição é incompreensível. Seu “Golem de Lava” pode ser invocado para o lado do campo do oponente, onde lentamente sufoca seu adversário.">
+                    <img src="./src/imagens/Yami Marik.png" alt="Yami Marik">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/Grande-Yami-Yugi.png" alt="Personagem Selecionado">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Yami Yugi</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Quando Yugi Muto resolveu o Enigma do Milênio, ele foi infundido com 
+                    o antigo espírito de Yami Yugi. Yami Yugi está pronto para enfrentar 
+                    qualquer desafio para recuperar suas memórias perdidas. Um duelista 
+                    experiente com habilidades e cartas incomparáveis, o monstro mais 
+                    confiável de Yami Yugi é o “Mago Negro”.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
